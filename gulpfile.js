@@ -85,7 +85,7 @@ var gulp = require('gulp'),
     // - Watch
     gulp.task('watch', function() {
 
-        gulp.watch('src/template-parts/*.html', ['html', browsersync.reload]);
+        gulp.watch(['src/template-parts/*.html', 'src/index.html'], ['html', browsersync.reload]);
 
         gulp.watch('src/scss/*/_*.scss', ['styles', browsersync.reload]);
 
