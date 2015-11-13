@@ -1,0 +1,23 @@
+{
+  "name": "m2cap",
+  "description": "Сайти консалтингового агентства m2cap",
+  "main": "index.html",
+  "authors": [
+    "Alexey Maevskiy"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://vk.com/sardaukar40k",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
