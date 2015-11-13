@@ -1,0 +1,11 @@
+@mixin block-shadow($bottom) {
+  content: '';
+  height: 43px;
+  width: 100%;
+  background: url('img/block-shadow.png') center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  opacity: .9;
+  bottom: -$bottom;
+}

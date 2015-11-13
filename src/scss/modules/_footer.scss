@@ -1,7 +1,62 @@
 .footer {
-    &_main {
-        &-info {
-            background: $color_footer-info;
+
+  /* -- footer_main -- */
+  &_main {
+    border-top: 3px solid $color_footer-border;
+    background: url('img/_footer/footer-bg_main.png') repeat;
+    
+    /* -- footer_main-links -- */
+    &-links {
+      padding: 30px 0;
+
+      /* -- footer_main-links-menu_bottom -- */
+      &-menu_bottom {
+        h2 {
+          font-size: 24px;
+          line-height: 1.2;
+          font-weight: bold;
+          margin-bottom: 15px;
+          text-transform: uppercase;
         }
-    }
+        ul {
+          li {
+            padding: 7px 0;
+            a {
+              color: #000;
+              font-size: 1em;
+            }
+        }  
+          }
+      } /* -- /footer_main-links-menu_bottom -- */
+
+      /* -- footer_main-links-vk -- */
+      &-vk {
+        position: relative;
+        background: $color_vk-bg;
+        padding-bottom: 5px;
+        &:after {
+          @include block-shadow(35px);
+        }
+      }
+      /* -- /footer_main-links-vk -- */
+    } /* -- /footer_main-links -- */
+
+    /* -- footer_main-info -- */
+    &-info {
+      background: $color_footer-info;
+      color: #fff;
+      padding: 15px 0;
+      &-copyright {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+      &-quote_bottom {
+        text-align: right;
+        font-style: italic;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+    } /* -- /footer_main-info -- */
+  } /* -- /footer_main -- */
 }
