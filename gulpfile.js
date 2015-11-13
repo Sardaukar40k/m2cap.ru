@@ -9,9 +9,9 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
-    server = require('serve-static'),
+    serve = require('serve-static'),
     connect = require('connect'),
-    browserSync = require('browser-sync');
+    browsersync = require('browser-sync');
 
 
     // - HTML
@@ -64,7 +64,7 @@ var gulp = require('gulp'),
 
     // - Server
     gulp.task('server', function() {
-        return connect().use(serve(_dirname))
+        return connect().use(serve(__dirname))
         .listen(8080)
         .on('listening', function() {
             console.log('Server is running!');
@@ -73,10 +73,10 @@ var gulp = require('gulp'),
 
 
     // - Browser Sync
-    gulp.task('browsersync', function() {
-        return browserSync({
+    gulp.task('browsersync', function(cb) {
+        return browsersync({
             server: {
-                baseDir: './'
+                baseDir:'./'
             }
         }, cb);
     });
@@ -85,13 +85,13 @@ var gulp = require('gulp'),
     // - Watch
     gulp.task('watch', function() {
 
-        gulp.watch('src/template-parts/*.html', ['html', browserSync.reload]);
+        gulp.watch('src/template-parts/*.html', ['html', browsersync.reload]);
 
-        gulp.watch('src/scss/*/_*.scss', ['styles', browserSync.reload]);
+        gulp.watch('src/scss/*/_*.scss', ['styles', browsersync.reload]);
 
-        gulp.watch('src/js/_*.js', ['scripts', browserSync.reload]);
+        gulp.watch('src/js/_*.js', ['scripts', browsersync.reload]);
 
-        gulp.watch('src/img/*', ['images', browserSync.reload]);
+        gulp.watch('src/img/*', ['images', browsersync.reload]);
 
     });
 
