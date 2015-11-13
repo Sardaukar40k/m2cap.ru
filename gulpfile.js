@@ -29,7 +29,7 @@ var gulp = require('gulp'),
             'src/scss/states/_*.scss', 
             'src/scss/utilities/_*.scss', 
             'src/scss/base/_*.scss', 
-            'src/scss/layouts/_*.scss', 
+            'src/scss/layout/_*.scss', 
             'src/scss/modules/_*.scss'
             ])
         .pipe(concat('styles.scss'))
