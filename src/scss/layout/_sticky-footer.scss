@@ -4,10 +4,17 @@ html {
 }
 body {
   margin-bottom: 535px;
+  @media screen and (max-width: $content-width) {
+    margin-bottom: 0;
+  }
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   min-height: 535px;
+  @media screen and (max-width: $content-width) {
+      position: static;
+      min-height: auto;
+  }
 }
