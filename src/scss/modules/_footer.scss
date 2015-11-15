@@ -46,17 +46,22 @@
       background: $color_footer-info;
       color: #fff;
       padding: 15px 0;
+
+      /* -- footer_main-info-copyright -- */
       &-copyright {
         text-align: center;
         line-height: 1.5;
         font-size: 14px;
-      }
+      } /* -- /footer_main-info-copyright -- */
+
+      /* -- footer_main-info-quote_bottom -- */
       &-quote_bottom {
         text-align: right;
         font-style: italic;
         line-height: 1.5;
         font-size: 14px;
-      }
+      } /* -- /footer_main-info-quote_bottom -- */
     } /* -- /footer_main-info -- */
+    
   } /* -- /footer_main -- */
 }

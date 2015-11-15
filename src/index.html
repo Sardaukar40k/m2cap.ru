@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Косалтинговое агентство m2Cap</title>
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css"> <!-- bootstrap 3 : подключается до reset.css -->
+
+    <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css"> <!-- reset -->
+
+    <link rel="stylesheet" type="text/css" href="libs/owl-carousel/owl-carousel/owl.carousel.css"> <!-- carousel styles -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- main styles -->
 </head>
 <body>
 
     <!-- header -->
     //= template-parts/header.html
     <!-- /header -->
+    <div class="container">
+      <div class="page-content-wrapper">
+        <div class="row">
+          <!-- content -->
+          //= template-parts/content.html
+          <!-- /content -->
+        </div>
 
-    <!-- content -->
-    <section class="content">
-        
-    </section>
-    <!-- /content -->
-    
+        <div class="row">
+          <!-- sidebar -->
+          //= template-parts/sidebar.html
+          <!-- /sidebar -->
+        </div>
+
+      </div> <!-- /.page-content-wrapper -->
+    </div> <!-- /.container -->
+
     <!-- footer -->
     //= template-parts/footer.html
     <!-- /footer -->
 
-    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+    <!-- /main scripts -->
 </body>
 </html>

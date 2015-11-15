@@ -1,7 +1,17 @@
-$font_main: sans-serif;
+$font_main: Arial, sans-serif;
 $font_text : Arial, sans-serif;
-$color_brand: #000;
-$color_footer-info: #2e3748;
-$color_footer-border: #2e3748;
+
+$color_brand: #fac403;
+$color_second: #2e3748;
+$color_footer-info: $color_second;
+$color_footer-border: $color_second;
 $color_vk-bg: #e8e8e8;
+$color_sidebar-blocks-border: #eaeaea;
+$color_form-inputs-border: #bcbcbc;
+$color_hr: #32343d;
+
 $content-width: 1024px;
+
+$width_sidebar: 30%;
+$width_content: 70%;
+

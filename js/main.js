@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#partners-carousel_main");e.owlCarousel({autoPlay:2e3,stopOnHover:!0,loop:!0,items:2,itemsDesktop:[960,2],itemsTablet:[600,2],itemsMobile:[480,1]})});

@@ -1,6 +1,26 @@
+
 .container {
-    width: $content-width;
-    @media screen and (max-width: $content-width) {
-        width: 100%;
-    }
+  width: $content-width; // -- в _variables.scsss
+  @media screen and (max-width: $content-width) {
+    width: 100%;
+  }
 }
+
+/* -- Разметка -- */
+.page-content-wrapper {
+  padding: 30px 0;
+}
+.content {
+  width: 70%;
+  float: left;
+  @media screen and (max-width: $content-width) {
+    width: 100%;
+  }
+} /* -- /.content -- */
+
+.sidebar {
+  &_main {
+    width: $width_sidebar;
+    float: right;
+  }
+} /* -- /.sidebar -- */
