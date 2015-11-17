@@ -1,0 +1,28 @@
+.team {
+  width: 100%;
+
+  /* -- .team-item -- */
+  &-item {
+    margin-bottom: 40px;
+    clear: both;
+    &-img {
+      width: 20%;
+      height: auto;
+      float: left;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    &-text {
+      width: 80%;
+      float: right;
+      padding: 0 0 0 25px;
+      h2:first-child {
+        margin-top: 0;
+      }
+    }
+    
+  } /* -- /.team-item -- */
+
+} /* -- /.team -- */

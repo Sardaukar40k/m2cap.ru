@@ -1,8 +1,11 @@
 .content {
-
+  padding: 20px 0;
+  @media screen and (max-width: $content-width) {
+    padding: 20px 15px;
+  }
   /* -- Заголовки -- */
   h2 {
-    font {
+    font : {
       size: 25px;
       weight: bold;
     }
@@ -10,7 +13,7 @@
   }
 
   h3 {
-    font {
+    font : {
       size: 22px;
       weight: bold;
     }
@@ -18,7 +21,7 @@
   }
 
   h4 {
-    font {
+    font : {
       size: 18px;
       weight: 600;
     }
@@ -26,7 +29,7 @@
   }
 
   h5, h6 {
-    font {
+    font : {
       size: 16px;
       weight: 500px;
     }
@@ -35,7 +38,7 @@
   
   /* -- Текст -- */
   p {
-    font: {
+    font : {
       size: 16px;
     }
     margin: 10px auto;
@@ -48,5 +51,24 @@
     margin: 10px auto;
   }
   /* -- /Элементы -- */
+
+  /* -- Списки -- */
+  ol {
+    list-style: decimal;
+    list-style-position: inside;
+    padding-left: 10px;
+    li {
+      margin: 10px auto;
+    }
+  }
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 10px;
+    li {
+      margin: 10px auto;
+    }
+  }
+  /* -- /Списки -- */
 
 } /* -- /.content -- */
