@@ -1,0 +1,52 @@
+.content {
+
+  /* -- Заголовки -- */
+  h2 {
+    font {
+      size: 25px;
+      weight: bold;
+    }
+    margin: 20px auto;
+  }
+
+  h3 {
+    font {
+      size: 22px;
+      weight: bold;
+    }
+    margin: 20px auto;
+  }
+
+  h4 {
+    font {
+      size: 18px;
+      weight: 600;
+    }
+    margin: 20px auto;
+  }
+
+  h5, h6 {
+    font {
+      size: 16px;
+      weight: 500px;
+    }
+  }
+  /* -- /Заголовки -- */
+  
+  /* -- Текст -- */
+  p {
+    font: {
+      size: 16px;
+    }
+    margin: 10px auto;
+  }
+  /* -- /Текст -- */
+
+  /* -- Элементы -- */
+  iframe, img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  /* -- /Элементы -- */
+
+} /* -- /.content -- */
