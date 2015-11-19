@@ -1,0 +1,79 @@
+.reviews {
+  width: 100%;
+
+  h1 {
+    margin-bottom: 70px;
+  }
+  /* -- .reviews-item -- */
+  &-item {
+    position: relative;
+    border: 2px solid $color_reviews-item-border;
+    padding: 45px 30px;
+    margin-bottom: 70px;
+    &:before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 49px;
+      background: url("img/_reviews/review-icon.jpg") center center no-repeat;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+
+      margin: 0 auto 0 -50px;
+    }
+
+    
+    /* -- .reviews-item-img -- */
+    &-img {
+      width: 18%;
+      float: left;
+      padding: 0 30px 0 0;
+      img {
+        display: block;
+        margin: 0 auto 10px;
+        &:first-child {
+          width: 100%;
+        }
+      }
+    } /* -- /.reviews-item-img -- */
+
+     /* -- .reviews-item-content -- */
+    &-content  {
+      width: 82%;
+      float: right;
+      &-info {
+        margin-bottom: 20px;
+        h3, p, a {
+          margin: 0 auto 4px;
+          font : {
+            size : 20px;
+            weight: bold;
+          }
+        }
+        a {
+          text-decoration: underline;
+          &:hover {
+            color: lighten($color_reviews-link, 20%);
+            text-decoration: none;
+          }
+          &:link,
+          &:visited {
+            color: $color_reviews-link;
+          }
+        }
+      } /* -- /.reviews-item-content-info -- */
+
+      &-text {
+        img, iframe, video, embed, object {
+          max-width: 100%;
+        }
+      }
+
+    } /* -- /.reviews-item-content -- */
+    
+
+  } /* -- .reviews-item -- */
+  
+
+}

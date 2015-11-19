@@ -1,0 +1,41 @@
+.faq {
+  width: 100%;
+
+  &-head {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-item {
+    margin:  30px auto;
+
+    &-question {
+      margin-bottom: 5px;
+      p {
+        font : {
+          size : 20px;
+          weight: bold;
+        }
+        span {
+          text-transform: uppercase;
+        }
+      }
+
+    }
+
+    &-answer {
+      p {
+        span {
+          font : {
+            size : 20px;
+            weight: bold;
+          }
+          text-transform: uppercase;
+        }
+      }
+    }
+
+  }
+
+}
