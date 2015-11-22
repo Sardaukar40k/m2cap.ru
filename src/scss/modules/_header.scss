@@ -92,5 +92,24 @@
     
 
   } /* -- /.header_big -- */
+
+  /* -- .header_mini -- */
+  &_mini {
+    @extend .header_big;
+    &-content {
+      @extend .header_big-content;
+      padding: 40px 0 60px;
+      &-logo {
+        @extend .header_big-content-logo;
+      }
+      &-main-headers {
+        @extend .header_big-content-main-headers;
+      }
+      &-phone {
+        @extend .header_big-content-phone;
+      }
+
+    }
+  }
     
 } /* -- /.header -- */

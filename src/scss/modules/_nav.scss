@@ -2,10 +2,14 @@
 
   /* -- .nav_main -- */
   &_main {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     text-align: justify;
     padding: 8px 0;
+    li {
+      display: inline-block;
+    }
     a {
       display: inline-block;
       color: #fff;

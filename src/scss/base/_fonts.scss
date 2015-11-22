@@ -1,3 +1,9 @@
 body {
     font-family: $font_main;
 }
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italc;
+}
