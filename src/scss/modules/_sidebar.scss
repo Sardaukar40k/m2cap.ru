@@ -64,10 +64,12 @@
       margin: 40px auto;
       border: 1px solid $color_sidebar-blocks-border;
       padding: 25px;
+      font-family: $font_second;
       &:after {
         @include block-shadow(33px);
       }
       h2 {
+        font-family: $font_main;
         font-size: 24px;
         font-weight: bold;
         text-align: center;
@@ -88,7 +90,7 @@
       &-text {
         margin: 20px auto;
         line-height: 1.2;
-        font-size: 14px;
+        font-size: 16px;
       }
       /* -- .sidebar_main-review-text -- */
       

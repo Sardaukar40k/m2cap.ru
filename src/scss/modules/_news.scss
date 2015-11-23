@@ -1,0 +1,36 @@
+.news { 
+  width: 100%;
+
+  h1 {
+    margin-bottom: 60px;
+  }
+
+  &-item {
+    margin: 20px auto 40px;
+    clear: both;
+
+    &-main-img {
+      width: 25%;
+      float: left;
+      display: block;
+      margin: 0 auto 15px !important;
+      padding: 0 15px 0 0;
+    }
+
+    h2 {
+      font-size: 19px;
+      text-align: left;
+      margin: 0 auto 10px;
+      a {
+        color: $color_second;
+      }
+    }
+
+    &-info {
+      font-size: 12px !important;
+      color: #444;
+      font-style: italic;
+    }
+
+  }
+}

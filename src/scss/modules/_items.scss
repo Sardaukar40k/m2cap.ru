@@ -1,0 +1,38 @@
+.item_vertical {
+  display: block;
+  width: 50%;
+  float: left;
+  padding: 0 20px 0;
+  min-height: 135px;
+  margin: 0 auto 40px;
+  img {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  p {
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font_second;
+  }
+}
+
+.item_horizontal {
+  display: block;
+  width: 100%;
+  margin: 0 auto 20px;
+  @extend %clearfix;
+  img {
+    float: left;
+    width: 15%;
+  }
+  p {
+    float: left;
+    width: 75%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font_second;
+  }
+}
